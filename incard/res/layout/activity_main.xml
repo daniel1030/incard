@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/background"
+    android:gravity="clip_vertical"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/btOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btDesignCard"
+        android:layout_alignBottom="@+id/btDesignCard"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btDesignCard"
+        android:text="訂單查詢" />
+
+    <Button
+        android:id="@+id/btDesignCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btContact"
+        android:layout_alignBottom="@+id/btContact"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btContact"
+        android:text="編輯卡片" />
+
+    <Button
+        android:id="@+id/btTemplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btOrder"
+        android:layout_alignBottom="@+id/btOrder"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btOrder"
+        android:text="模板管理" />
+
+    <Button
+        android:id="@+id/btBrithday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btTemplate"
+        android:layout_alignBottom="@+id/btTemplate"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btAbout"
+        android:text="生日專區" />
+
+    <Button
+        android:id="@+id/btAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btBrithday"
+        android:layout_alignBottom="@+id/btBrithday"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btTemplate"
+        android:text="資料設定" />
+
+    <Button
+        android:id="@+id/btContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="280dp"
+        android:text="通訊錄" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="41dp"
+        android:text="MainView"
+        android:textSize="32dp" />
+
+</RelativeLayout>
